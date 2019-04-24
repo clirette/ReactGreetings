@@ -9,7 +9,6 @@ function GreetingForm({createGreeting}) {
     e.preventDefault();
     try {
       const response = await axios.get(`/greeting${name ? `/?name=${name}` : ''}`);
-      console.log(response.data);
       createGreeting(response.data);
     } catch(err) {
       console.log(err);
