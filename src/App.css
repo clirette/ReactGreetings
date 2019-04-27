@@ -76,6 +76,7 @@ body {
       transform: translate(-50%, -50%);
       width: 80%; }
     .greeting-block__title {
-      font-size: 4rem; }
+      font-size: 4rem;
+      font-weight: 400; }
     .greeting-block__content {
       font-size: 2rem; }
