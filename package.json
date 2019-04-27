@@ -14,7 +14,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass:watch": "node-sass src/sass/main.scss src/App.css -w",
-    "dev": "concurrently \"npm run sass:watch\" \"npm run start\""
+    "dev": "concurrently \"npm run sass:watch\" \"npm run start\"",
+    "deploy:s3": "npm run build && aws s3 sync build/ s3://chase-greetings"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,7 +32,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080",
   "devDependencies": {
     "concurrently": "^4.1.0",
     "node-sass": "^4.11.0"
